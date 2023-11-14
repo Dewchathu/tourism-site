@@ -1,0 +1,388 @@
+/* Global CSS */
+
+body {
+  background-image: url('assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+}
+
+header, footer {
+  padding: 20px;
+  text-align: center;
+ 
+}
+
+/* Style for the navigation bar */
+
+header a img {
+  float: left;
+  background: white;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+
+.navbar {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a {
+  color: black;
+  padding: 5px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  color: white;
+  background: #3498DB;
+}
+
+.active {
+  color: white !important;
+  background: #1A5276;
+}
+
+/* Footer styles */
+footer {
+  color:#1A5276;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+}
+
+.footer-links a {
+  color: #1A5276;
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: #3498DB ;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #1A5276;
+}
+
+.social-icons a i {
+  width: 30px;
+  height: 10px; 
+  font-size: 25px;
+  color: #1A5276;
+}
+
+.social-icons a i:hover {
+  opacity: 0.8;
+  color: #3498DB ;
+}
+
+footer p {
+  margin: 0;
+}
+
+.home-footer {
+  position: fixed;
+  width: 98%;
+  height: 100px;
+  z-index: -1;
+  justify-content: space-between;
+  align-items: end;
+}
+
+/*Style for home page*/
+
+main {
+  padding: 20px;
+}
+
+.description{
+  background-color: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+  height: 450px;
+  margin: auto;
+}
+
+.home_arrange{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.text-pannel{
+  margin: auto;
+  padding: 10px;
+  width: 60%;
+  line-height: 2.0;
+  color: black;
+  text-align: justify;
+}
+
+.description h2{
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+  padding: 0px;
+  margin: auto;
+  color: #3498DB ;
+}
+
+.description h2 span{
+  font-size:95px;
+  color: rgb(255, 255, 255);
+}
+
+.home_image{
+  margin: auto;
+  width: 40%;
+  height: 100%;
+}
+
+.image-add {
+  background-image: url('assets/home_front.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
+
+/* Heritage site page CSS */
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: gray;
+  color: #fff;
+  font-size: 12px;
+  opacity: .8;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.heritage-name {
+  right: 0;
+  width: 50%;
+  margin-top: 8%;
+  position: fixed;
+}
+
+.heritage-name .heritage_h2 {
+  font-size: 80px;
+  text-align: center;
+  color: #fff;
+}
+
+.heritage-name .heritage_h2 span {
+  color: #2980b9;
+}
+
+.heritage-links {
+  width: 40%;
+  height: auto;
+  background-color: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+
+.heritage-item {
+  width: 200px;
+  height: auto;
+  flex: 1 1 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.heritage-item a {
+  text-decoration: none;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.heritage-item a:hover {
+  color: white;
+}
+
+.heritage-item a h2 {
+font-size: 15px;
+}
+
+.heritage-item img {
+  width: 100%;
+  height: 150px;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.heritage-item:hover {
+  transform: scale(1.1);
+}
+
+
+/* Hotel booking page CSS */
+
+.hotel-booking-form {
+  color: black;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-booking-form h2 {
+  color: #3498db;
+  text-align: center;
+  margin-top: 0;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #1A5276;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ecf0f1;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #2c3e50;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url('arrow-down.png');
+  background-size: 12px;
+  background-position: 95% center;
+  background-repeat: no-repeat;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Gallery page CSS */
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item {
+  flex: 1 1 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: .5s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.gallery-item:hover {
+  transform: scale(1.5);
+}
+
+/*Style for Heritage pages*/
+
+.inside-h2{
+  text-align: center;
+  color: #3498db;
+  font-size: 42px;
+}
+
+.description-inside{
+  background-color: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+  line-height: 2.0;
+}
+.description-inside p{
+  text-align: justify;
+  text-justify: inter-word;
+  color: black;
+}
+.description-image{
+  width: 100%;
+}
+
+.description-image img{
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+/*Chathura Devinda Gamage - 19APP3867*/
